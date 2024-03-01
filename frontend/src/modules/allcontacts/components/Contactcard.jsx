@@ -8,9 +8,6 @@ import { Link } from 'react-router-dom';
 import Updatecontact from '../../updatecontact/pages/Updatecontact';
 import DeleteIcon from '@mui/icons-material/Delete';
 import SettingsApplicationsSharpIcon from '@mui/icons-material/SettingsApplicationsSharp';
-import dotenv from 'dotenv'
-
-dotenv.config({path : './.env'})
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
