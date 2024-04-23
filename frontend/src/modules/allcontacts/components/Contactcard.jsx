@@ -21,7 +21,7 @@ const Contactcard = (props) => {
 
     const DeleteContact = async () => {
         try {
-            const res = await apiclient.delete('http://localhost:1234/removeContact/'+props.ID );
+            const res = await apiclient.delete('https://contact-book-app-0dmb.onrender.com/removeContact/'+props.ID );
             console.log("Response = " , res);
         }
         catch(err ){

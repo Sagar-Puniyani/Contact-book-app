@@ -31,7 +31,7 @@ const Readcontact = () => {
 
     try {
         console.log("From Get Contact: ", contactInfo);
-        const res = await apiclient.post("http://localhost:1234/getcontact", contactInfo);
+        const res = await apiclient.post("https://contact-book-app-0dmb.onrender.com/getcontact", contactInfo);
         setContact(res.data.record);
         console.log("Res =", res.data.record);
     } catch (err) {

@@ -42,13 +42,13 @@ const Updatecontact = () => {
     
     try{
         // finding the data 
-        const res = await apiclient.post('http://localhost:1234/getcontact' ,  NameOfContact )
+        const res = await apiclient.post('https://contact-book-app-0dmb.onrender.com/getcontact' ,  NameOfContact )
         console.log(" Update Res = "  , res );
         console.log("Simple id check in data = " , res.data.record._id );
         
         // updating the data 
         const ContactId = res.data.record._id;
-        const res_of_Update = await apiclient.post(`http://localhost:1234/updatecontact/${ContactId}` , ContactChangeInfo);
+        const res_of_Update = await apiclient.post(`https://contact-book-app-0dmb.onrender.com/updatecontact/${ContactId}` , ContactChangeInfo);
         setMessage("Update Contact")
         console.log("res_of_Update" , res_of_Update);
     }

@@ -23,7 +23,7 @@ const Allcontacts = () => {
     const [contact , setcontact ] = useState([]);
 
     const getallcontact = async () => {
-        const res = await apiclient.get("http://localhost:1234/getallcontact" );
+        const res = await apiclient.get("https://contact-book-app-0dmb.onrender.com/getallcontact" );
         setcontact( contact => contact = res.data.records);
     }
     

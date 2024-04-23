@@ -40,7 +40,7 @@ const Createcontact = () => {
     }
 
     try{
-        const res = await apiclient.post("http://localhost:1234/addcontact" , contactInfo);
+        const res = await apiclient.post("https://contact-book-app-0dmb.onrender.com/addcontact" , contactInfo);
         setMessage(res.data.message);
     }
     catch(err){
