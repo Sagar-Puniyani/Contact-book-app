@@ -6,6 +6,7 @@ dotenv.config({path : './.env'})
 
 const URL = process.env.MONGODB_URL;
 const promise = mongoose.connect(`${URL}`);
+console.log("URL : " , URL);
 promise.then(data=>{
     console.log('DB Connection Done...' );
 }).catch(err=>{
